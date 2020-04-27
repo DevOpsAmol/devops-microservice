@@ -16,7 +16,8 @@ pipeline {
 			steps {
 					echo "Integration"
 		}	}
-	} post {
+	}
+	post {
 	always {
 		echo 'I am awesom. I run always'
 		}
