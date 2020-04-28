@@ -9,7 +9,6 @@ pipeline {
 		stage('variables'){
 			steps {
 				sh 'mvn --version'
-				sh 'docker -version'
 				echo "Build"
 				echo "$PATH"
 				echo "$env.BUILD_TAG"
