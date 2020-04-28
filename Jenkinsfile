@@ -54,7 +54,7 @@ pipeline {
 				script {
 						docker.withRegistry('', 'dockerhub') {
 							dockerImage.push();
-							dockerImage.psuh('latest');
+							dockerImage.push('latest');
 						}
 					
 				}
@@ -64,7 +64,7 @@ pipeline {
 	}
 	post {
 	always {
-		echo 'I am awesom. I run always'
+		echo 'I am awesome. I run always'
 		}
 		success {
 			echo 'I run when you are successful'
